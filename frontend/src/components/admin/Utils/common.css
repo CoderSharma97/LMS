@@ -1,0 +1,117 @@
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #f5f5f5; /* Light slate gray background for sidebar */
+    color: #333; /* Dark gray text for better contrast */
+    border-right: 1px solid #ccc; /* Light gray border */
+    padding-top: 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+    z-index: 10;
+  }
+  
+  /* Mobile responsive: Adjust sidebar width on small screens */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 60px; /* Smaller sidebar on mobile */
+    }
+  
+    .sidebar ul li span {
+      display: none; /* Hide text labels on smaller screens */
+    }
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  /* Spacing between icon and text */
+  .sidebar ul li span {
+    margin-left: 10px; /* Add space between icon and text */
+  }
+  
+  /* Hover effect with blue scheme */
+  .sidebar ul li:hover {
+    background-color: #e3f2fd; /* Light blue background on hover */
+    padding-left: 30px; /* Expand padding on hover */
+  }
+  
+  /* Active state for selected menu items */
+  .sidebar ul li.active {
+    background-color: #1a73e8; /* Royal Blue for active links */
+    color: white;
+  }
+  
+  /* Link inside the menu item */
+  .sidebar ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #333; /* Dark gray text */
+    width: 100%;
+  }
+  
+  /* Icon styles */
+  .sidebar ul li .icon {
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover and active icon styles */
+  .sidebar ul li:hover .icon,
+  .sidebar ul li.active .icon {
+    transform: scale(1.2); /* Slight scale effect on hover */
+    color: #1a73e8; /* Royal blue color for icon on hover */
+  }
+  
+  .dashboard-admin {
+    display: flex;
+    margin-left: 200px; /* Account for the fixed sidebar width */
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+    padding: 20px;
+  }
+  
+  .dashboard-admin .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* If sidebar is collapsed, content margin shrinks */
+  @media (max-width: 768px) {
+    .dashboard-admin {
+      margin-left: 60px; /* For small screens */
+    }
+  }
+  
+  /* Sidebar toggle button (for collapsible sidebar) */
+  .sidebar-toggle {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background-color: #FFAA00; /* Bright yellow-orange toggle */
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-toggle:hover {
+    background-color: #FF8C00; /* Darker yellow on hover */
+  }
+  

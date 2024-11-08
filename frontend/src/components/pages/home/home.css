@@ -1,0 +1,58 @@
+.home {
+    background: linear-gradient(135deg, rgba(135, 184, 255, 0.1), rgba(85, 125, 185, 0.1));
+    padding: 100px 0;
+    text-align: center;
+}
+
+.home-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #ffffff; /* White content background */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    h1 {
+        font-size: 42px;
+        color: #335C89; /* Deep blue */
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 20px;
+        color: #4F6D7A; /* Subtle grey-blue */
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+
+    .common-btn {
+        padding: 12px 30px;
+        background-color: #335C89; /* Blue button with a fresh look */
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .common-btn:hover {
+        background-color: #357ABD; /* Darker shade of blue on hover */
+    }
+}
+
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .common-btn {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+}

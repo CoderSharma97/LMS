@@ -1,0 +1,91 @@
+footer {
+    background-color: #ffffff; /* Lighter background */
+    color: #335C89 !important;
+    padding: 5px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.08);
+ /* Light shadow for depth */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #335C89;
+}
+
+a {
+    text-decoration: none;
+    color: #335C89; /* Soft links */
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #6CC1E1; /* Lighter blue on hover */
+    }
+}
+
+.social-links {
+    margin-top: 20px;
+
+    a {
+        color: #335C89;
+        font-size: 20px;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+        color: #6CC1E1; /* Light blue hover effect */
+        transform: scale(1.2); /* Slight zoom effect on hover */
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 10px; /* Adjust padding for mobile */
+    }
+
+    .footer-content {
+        padding: 0 10px; /* Less padding on mobile */
+    }
+
+    p {
+        font-size: 14px; /* Smaller text for mobile */
+        margin: 5px 0; /* Reduced margin */
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+
+    .social-links a {
+        font-size: 15px; /* Smaller icons on mobile */
+        margin: 0 10px; /* Reduced margin */
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 7px; /* Further reduce font size for very small screens */
+    }
+
+    .social-links {
+        margin-top: 10px; /* Even smaller space for social links */
+    }
+
+    .social-links a {
+        font-size: 22px; /* Even smaller icons on very small screens */
+        margin: 0 8px; /* Further reduced margin */
+    }
+}

@@ -1,0 +1,140 @@
+/* Table Styles */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a modern look */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden;
+}
+
+/* Table Header */
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd; /* Light border for cleaner appearance */
+  padding: 12px; /* Increased padding for better spacing */
+  text-align: left;
+  font-size: 16px; /* Slightly larger text */
+}
+
+.user-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  text-transform: uppercase; /* Make header text stand out */
+  color: #333;
+}
+
+/* Table Body */
+.user-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd rows */
+}
+
+.user-table tbody tr:hover {
+  background-color: #e6f7ff; /* Light blue hover effect */
+}
+
+/* Button Styles */
+.common-btn {
+  padding: 8px 15px;
+  background-color: #1a73e8; /* Match the Royal Blue theme */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.common-btn:hover {
+  background-color: #155a8a; /* Slightly darker shade of blue */
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Specific Button for Update Role */
+.update-btn {
+  background-color: #1a73e8; /* Royal Blue */
+}
+
+.update-btn:hover {
+  background-color: #155a8a;
+}
+
+.user-table td button:focus {
+  outline: none;
+}
+
+/* Responsive Styling (Mobile-first approach) */
+@media (max-width: 768px) {
+  /* Table adjustments */
+  .user-table {
+    font-size: 14px; /* Smaller font size on mobile */
+    border: none; /* Remove outer border for better layout */
+    box-shadow: none; /* No shadow for mobile */
+  }
+
+  /* Table header cells to align with row content */
+  .user-table th {
+    display: none; /* Hide headers on mobile */
+  }
+
+  /* Convert table rows to block and make it look like a list */
+  .user-table td {
+    display: block;
+    width: 100%;
+    padding: 12px 10px;
+    text-align: right;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Adding data labels before table data for mobile */
+  .user-table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 14px;
+  }
+
+  /* Adjust button to be full-width and more clickable */
+  .common-btn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Adjust buttons within table for smaller screen */
+  .user-table td button {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* Hide table borders on smaller screens for clarity */
+  .user-table td:first-child {
+    border-top: none;
+  }
+
+  .user-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+/* General Layout Styles */
+.users {
+  padding: 20px;
+  background-color: #ffffff; /* White background for clean look */
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}

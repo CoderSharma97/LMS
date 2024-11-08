@@ -1,0 +1,88 @@
+/* Profile Card Styling */
+.profile {
+    background-color: white;
+    padding: 30px; /* Slightly more padding for spacing */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+    width: 25%;
+    margin: 150px auto; /* Keep it centered and reduce the space for a more compact look */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .profile:hover {
+    transform: translateY(-5px); /* Elevate card on hover for a subtle effect */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .profile {
+      padding: 20px;
+      width: 80%;
+      margin: 100px auto;
+    }
+  }
+  
+  .profile h2 {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center; /* Center-align the heading */
+  }
+  
+  .profile-info {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .profile-info p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .profile-info strong {
+    color: #335C89;
+    font-weight: 600;
+  }
+  
+  .common-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    background-color: #FFAA00; /* Bright yellow for action buttons */
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 18px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for buttons */
+  }
+  
+  .common-btn:hover {
+    background-color: #FF8C00; /* Slightly darker yellow-orange */
+    transform: scale(1.05); /* Button grows on hover */
+  }
+  
+  .common-btn:active {
+    transform: scale(1);
+  }
+  
+  /* Red Logout button */
+  .common-btn.logout {
+    background-color: #FF5733;
+  }
+  
+  .common-btn.logout:hover {
+    background-color: #e44e2f;
+  }
+  
+  /* Icon Styling */
+  .common-btn .icon {
+    margin-right: 10px;
+  }
+  

@@ -1,0 +1,72 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff; /* White background for the header */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-wrap: wrap; /* Allow flex items to wrap on small screens */
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #335C89; /* Deep blue for the logo */
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    flex: 1; /* Allow logo to take up space in smaller screens */
+
+    &:hover {
+        color: #4A90E2; /* Lighter blue on hover */
+    }
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+        text-align: center; /* Center logo on smaller screens */
+        flex: 1 100%; /* Make logo take full width on small screens */
+    }
+}
+
+.link {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap; /* Allow links to wrap on small screens */
+    justify-content: flex-end; /* Align links to the right on larger screens */
+    margin-left: auto; /* Align the links to the right */
+
+    @media (max-width: 768px) {
+        width: 100%; /* Links should take full width */
+        justify-content: space-between; /* Distribute links evenly */
+        gap: 1rem;
+        padding-top: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4F6D7A; /* Subtle grey-blue color */
+        font-size: 16px;
+        font-weight: 500;
+        transition: color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            color: #335C89; /* Deep blue on hover */
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    .auth-link {
+        font-weight: 600;
+        color: #4A90E2; /* Blue accent for authentication links */
+    }
+}

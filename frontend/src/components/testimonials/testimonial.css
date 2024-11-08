@@ -1,0 +1,76 @@
+/* testimonial.css */
+.testimonials {
+  padding: 80px 0;
+  text-align: center;
+}
+.testimonials h2 {
+  color: #335C89 !important; /* Using !important to override other styles */
+}
+
+h2 {
+  font-size: 32px;
+  color: #335C89; /* Deep blue for the heading */
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.testimonials-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonials-card {
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+
+  &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 768px) {
+      width: 80%;
+      text-align: center;
+  }
+
+  .student-image img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+  }
+
+  .message {
+      font-size: 16px;
+      color: #4F6D7A; /* Subtle grey-blue for the message text */
+      margin-bottom: 15px;
+      font-style: italic;
+  }
+
+  .info {
+      text-align: center;
+  }
+
+  .name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #335C89; /* Deep blue for the name */
+      margin-bottom: 3px;
+  }
+
+  .position {
+      font-size: 14px;
+      color: #335C89; /* Subtle grey-blue for the position */
+  }
+}
